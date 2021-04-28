@@ -44,17 +44,17 @@ export default ({ state, navigation}) => {
                 <Ionicons style={{opacity: state.index===1? 1: 0.5}} name="bar-chart" size={23} color="#FFF" />
                 <TextTabItemTitle style={{opacity: state.index===1? 1: 0.5}}>Serviços</TextTabItemTitle>
             </TabItem>
-            {/* <TabItem onPress={()=> goTo('Page2')}>
-                <Ionicons style={{opacity: state.index===2? 1: 0.5}} name="bar-chart" size={16} color="#FFF" />
-                <TabItemTitle style={{opacity: state.index===2? 1: 0.5}}>Consiliação Venda</TabItemTitle>
-            </TabItem> */}
+            <TabItem onPress={()=> goTo('Gestao')}>
+                <Ionicons style={{opacity: state.index===2? 1: 0.5}} name="bar-chart" size={23} color="#FFF" />
+                <TextTabItemTitle style={{opacity: state.index===2? 1: 0.5}}>Gestão</TextTabItemTitle>
+            </TabItem> 
             <TabItemCenter onPress={()=> goTo('Home')}>
                 <Ionicons style={{opacity: state.index===0? 1: 0.5}} name="home" size={25} color="#FFF" />
             </TabItemCenter>
-            {/* <TabItem onPress={()=> goTo('Page3')}>
-                <Ionicons style={{opacity: state.index===3? 1: 0.5}} name="bar-chart" size={16} color="#FFF" />
-                <TabItemTitle style={{opacity: state.index===3? 1: 0.5}}>Consiliação Pagamento</TabItemTitle>
-            </TabItem> */}
+             <TabItem onPress={()=> goTo('Page3')}>
+                <Ionicons style={{opacity: state.index===3? 1: 0.5}} name="help-outline" size={23} color="#FFF" />
+                <TextTabItemTitle style={{opacity: state.index===3? 1: 0.5}}>Perguntas Frequentes</TextTabItemTitle>
+            </TabItem> 
             <TabItem onPress={()=> goTo('Profile')}>
                 <Ionicons style={{opacity: state.index===4? 1: 0.5}} name="person-circle" size={23} color="#FFF" />
                 <TextTabItemTitle style={{opacity: state.index===4? 1: 0.5}}>Perfil</TextTabItemTitle>
