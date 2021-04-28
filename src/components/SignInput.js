@@ -5,7 +5,7 @@ import  {Ionicons} from '@expo/vector-icons';
 const InputArea = styled.View `
     width: 100%;
     height: 60px;
-    background-color: #FF8A8A;
+    background-color: #B9B7BD;
     flex-direction: row;
     border-radius: 30px;
     padding-left: 15px;
