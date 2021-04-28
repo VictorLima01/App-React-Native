@@ -24,10 +24,10 @@ import  {Ionicons} from '@expo/vector-icons';
 
 export default () => {
     const navigation = useNavigation();
-     const handleSignClick = () =>{
+    //  const handleSignClick = () =>{
 
-     navigation.navigate('Gestao');
-    }
+    //  navigation.navigate('Gestao');
+    // }
     const clickFluxo = () =>{
 
       navigation.navigate('FluxoCaixa');
@@ -47,24 +47,24 @@ export default () => {
              <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Taxas Administrativas</InfoName>
+                   Controle de Taxas</InfoName>
                    </InfoArea>
                    <Ionicons style={styles.icon} name="chevron-forward-outline" size={35} color="#442357" /> 
              </Area>
              <Area onPress={clickFluxo}>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Fluxo de gestão</InfoName>
+                   Fluxo de caixa</InfoName>
                    </InfoArea>
                    <Ionicons style={styles.icon} name="chevron-forward-outline" size={35} color="#442357" /> 
              </Area>
-             <Area  onPress={handleSignClick}>
+             {/* <Area  onPress={handleSignClick}>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
                    Gestão</InfoName>
                    </InfoArea>
                    <Ionicons style={styles.icon} name="chevron-forward-outline" size={35} color="#442357" /> 
-             </Area>       
+             </Area>        */}
             </Scroller>
         </Container>
     )
