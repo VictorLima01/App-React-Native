@@ -65,29 +65,29 @@ const MyBarChart = () => {
        <PieChart
          data={[
            {
-             name: 'Seoul',
-             population: 21500000,
-             color: 'rgba(131, 167, 234, 1)',
+             name: 'São Paulo',
+             population: 215,
+             color: '#F7FC3E',
              legendFontColor: '#7F7F7F',
              legendFontSize: 10,
            },
            {
-             name: 'Toronto',
-             population: 2800000,
+             name: 'Rio de Janeiro',
+             population: 280,
              color: '#F00',
              legendFontColor: '#7F7F7F',
              legendFontSize: 10,
            },
            {
-             name: 'New York',
-             population: 8538000,
+             name: 'Curitiba',
+             population: 853,
              color: '#0A9C31',
              legendFontColor: '#7F7F7F',
              legendFontSize: 10,
            },
            {
-             name: 'Moscow',
-             population: 11920000,
+             name: 'Guarulhos',
+             population: 1192,
              color: 'rgb(0, 0, 255)',
              legendFontColor: '#7F7F7F',
              legendFontSize: 10,
@@ -128,7 +128,7 @@ export default () => {
            <HeaderArea style={{marginTop: -55}}>
                     <HeaderTitle numberOfLines={2}>
                     <Ionicons style={{marginRight: 10}} name="analytics" size={20} color="#FFF" />
-                      Serviços/ Gestão</HeaderTitle>    
+                     Gestão</HeaderTitle>    
            </HeaderArea>
              <Area>
                  <InfoArea>
