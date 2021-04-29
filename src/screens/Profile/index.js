@@ -28,7 +28,7 @@ export default () => {
     return(
         <Container>
             <ImageUserArea>
-              <Ionicons name="person-circle" size={200} color="#C85250" />
+              <Ionicons name="person-circle" size={200} color="#868B8E" />
             </ImageUserArea>
             <InputArea>
                 <InputProfileEmail />
