@@ -14,9 +14,10 @@ import {
     SignMessageButtonTextBold,
     ImageLogo
 } from './styles';
-import { Image, Text, StyleSheet } from 'react-native';
+import { Image, Text, StyleSheet, Linking } from 'react-native';
 import SignInput from '../../components/SignInput';
 import SignInputPassword from '../../components/SignInputPassword';
+import  {Ionicons} from '@expo/vector-icons';
 
 export default () => {
     const navigation = useNavigation();
@@ -51,10 +52,22 @@ export default () => {
                 </CustomButton>
             </InputArea>
 
-            <SignMessageButton style={styles.SignMessageButton}>
-                <SignMessageButtonText><Text style={styles.SignMessageButtonText}>Todos os direitos reservados Accesstage.</Text></SignMessageButtonText>
-                {/* <SignMessageButtonTextBold><Text style={styles.SignMessageButtonTextBold}>Cadastre-se</Text></SignMessageButtonTextBold> */}
+            <SignMessageButton style={styles.SignInformationButton}>
+               <SignMessageButtonTextBold onPress={()=>{Linking.openURL('tel:119');}} style={styles.funcNavText}>
+                   <Text style={styles.SignMessageButtonTextBold}>
+                   <Ionicons style={styles.icon} name="help-circle-outline" size={16} color="#442357" />Mais informações clique aqui e ligue para Accesstage.
+                   </Text>
+                   </SignMessageButtonTextBold>
             </SignMessageButton>
+
+            <SignMessageButton style={styles.SignMessageButton}>
+                <SignMessageButtonText><Text style={styles.SignMessageButtonText}>
+                     Todos os direitos reservados Accesstage.
+                    </Text>
+                </SignMessageButtonText>
+            </SignMessageButton>
+
+            
 
         </Container>
     );
@@ -68,19 +81,24 @@ const styles = StyleSheet.create({
     SignMessageButton: {
         flexDirection: "row",
         justifyContent: "center",
-        marginTop: 50,
+        marginTop: 7,
         marginBottom: 20,
+    },
+    SignInformationButton: {
+        flexDirection: "row",
+        justifyContent: "center",
+        marginTop: 50,
+        marginBottom: 15,
     },
     SignMessageButtonText: {
         fontSize: 16,
-        color: "#C85250",
+        color: "#868B8E",
         fontWeight: "bold",
     },
     SignMessageButtonTextBold: {
-        fontSize: 16,
-        color: "#C85250",
-        fontWeight: "bold",
-        marginLeft: 5
+        fontSize: 12,
+        color: "#442357",
+        marginLeft: 5,
     },tinyLogo: {
         width: 95,
         height: 70,
