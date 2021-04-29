@@ -29,10 +29,10 @@ const MyBarChart = () => {
        <Text style={styles.header}></Text>
        <BarChart
          data={{
-           labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+           labels: ['JAN', 'FEV', 'MAR', 'ABR'],
            datasets: [
              {
-               data: [20, 45, 28, 80, 99, 43],
+               data: [20, 45, 28, 80],
              },
            ],
          }}
@@ -133,7 +133,7 @@ export default () => {
              <Area>
                  <InfoArea>
                  <InfoName style={styles.titulo}>
-                    Vendas por ano</InfoName>
+                    Vendas no ano (2021)</InfoName>
                  <SafeAreaView style={{flex: 1}}>
                        <ScrollView>
                            <View style={styles.container}>
