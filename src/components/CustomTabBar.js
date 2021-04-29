@@ -41,22 +41,22 @@ export default ({ state, navigation}) => {
     return (
         <TabArea>
             <TabItem onPress={()=> goTo('Page1')}>
-                <Ionicons style={{opacity: state.index===1? 1: 0.5}} name="bar-chart" size={23} color="#FFF" />
+                <Ionicons style={{opacity: state.index===1? 1: 0.5}} name="bar-chart" size={18} color="#FFF" />
                 <TextTabItemTitle style={{opacity: state.index===1? 1: 0.5}}>Serviços</TextTabItemTitle>
             </TabItem>
             <TabItem onPress={()=> goTo('Gestao')}>
-                <Ionicons style={{opacity: state.index===2? 1: 0.5}} name="bar-chart" size={23} color="#FFF" />
+                <Ionicons style={{opacity: state.index===2? 1: 0.5}} name="bar-chart" size={18} color="#FFF" />
                 <TextTabItemTitle style={{opacity: state.index===2? 1: 0.5}}>Gestão</TextTabItemTitle>
             </TabItem> 
             <TabItemCenter onPress={()=> goTo('Home')}>
-                <Ionicons style={{opacity: state.index===0? 1: 0.5}} name="home" size={25} color="#FFF" />
+                <Ionicons style={{opacity: state.index===0? 1: 0.5}} name="home" size={20} color="#FFF" />
             </TabItemCenter>
              <TabItem onPress={()=> goTo('Page3')}>
-                <Ionicons style={{opacity: state.index===3? 1: 0.5}} name="help-outline" size={23} color="#FFF" />
-                <TextTabItemTitle style={{opacity: state.index===3? 1: 0.5}}>Perguntas Frequentes</TextTabItemTitle>
+                <Ionicons style={{opacity: state.index===3? 1: 0.5}} name="help-circle-outline" size={18} color="#FFF" />
+                <TextTabItemTitle style={{opacity: state.index===3? 1: 0.5}}>Perguntas</TextTabItemTitle>
             </TabItem> 
             <TabItem onPress={()=> goTo('Profile')}>
-                <Ionicons style={{opacity: state.index===4? 1: 0.5}} name="person-circle" size={23} color="#FFF" />
+                <Ionicons style={{opacity: state.index===4? 1: 0.5}} name="person-circle" size={18} color="#FFF" />
                 <TextTabItemTitle style={{opacity: state.index===4? 1: 0.5}}>Perfil</TextTabItemTitle>
             </TabItem>
         </TabArea>
