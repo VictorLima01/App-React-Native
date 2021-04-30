@@ -7,6 +7,7 @@ import {
    StyleSheet,
    Dimensions,
    ScrollView, 
+   Linking
 } from 'react-native';
 import {
     Container,
@@ -38,17 +39,18 @@ export default () => {
              <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Controle de Taxas</InfoName>
+                   Como posso fazer o cadastro no Access Card Mobile</InfoName>
+                   <InfoName style={styles.descricao}>
+                   Os usuários do app são cadastrados breviamente na base do acces card, você precisa entrar em contato com um dos atendentes da Accesstage por email ou <Text style={styles.callPhone} onPress={()=>{Linking.openURL('tel:119');}}>telefone</Text>.</InfoName>
                    </InfoArea>
-                   <Ionicons style={styles.icon} name="chevron-forward-outline" size={35} color="#442357" /> 
              </Area>
-             <Area>
+             {/* <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Fluxo de caixa</InfoName>
+                   As informações que aparecem </InfoName>
                    </InfoArea>
                    <Ionicons style={styles.icon} name="chevron-forward-outline" size={35} color="#442357" /> 
-             </Area>
+             </Area> */}
             </Scroller>
         </Container>
     )
@@ -90,5 +92,7 @@ const styles = StyleSheet.create({
    color: "grey",
    fontSize: 15,
    marginTop: 15
+ }, callPhone: {
+  color: "#442357",
  }
  });

@@ -149,7 +149,7 @@ export default () => {
              <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Cancelamento</InfoName>
+                   Cancelamentos</InfoName>
                    <InfoName style={styles.descricao}>
                    Ontem                                                     R$ 0,00</InfoName>
                    <View style = {styles.lineStyle} />
@@ -165,7 +165,7 @@ export default () => {
              <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Desagendamento</InfoName>
+                   Ajustes</InfoName>
                    <InfoName style={styles.descricao}>
                    Ontem                                                     R$ 0,00</InfoName>
                    <View style = {styles.lineStyle} />
@@ -176,12 +176,12 @@ export default () => {
                    Últimos 30 dias                                      R$ 0,00</InfoName>
                    <View style = {styles.lineStyle} />
                    </InfoArea>
-                   <Ionicons style={styles.icon} name="calendar-outline" size={35} color="#442357" /> 
+                   <Ionicons style={styles.icon} name="card-outline" size={35} color="#442357" /> 
              </Area>
              <Area>
                  <InfoArea>
                    <InfoName style={styles.titulo}>
-                   Ajuste a débito</InfoName>
+                   Aluguel</InfoName>
                    <InfoName style={styles.descricao}>
                    Ontem                                                     R$ 0,00</InfoName>
                    <View style = {styles.lineStyle} />

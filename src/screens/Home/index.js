@@ -135,6 +135,19 @@
                     <InfoName style={styles.titulo}>
                     Vendas</InfoName>
                     <InfoName style={styles.descricao}>
+                    Vendas conciliadas                                 R$ 0,00</InfoName>
+                    <View style = {styles.lineStyle} />
+                    <InfoName style={styles.descricao}>
+                    Vendas não conciliadas                         R$ 0,00</InfoName>
+                    <View style = {styles.lineStyle} />
+                    </InfoArea>
+                    <Ionicons style={styles.icon} name="cash-outline" size={35} color="#442357" /> 
+              </Area>
+              <Area>
+                  <InfoArea>
+                    <InfoName style={styles.titulo}>
+                    Saldo</InfoName>
+                    <InfoName style={styles.descricao}>
                     Ontem                                                     R$ 0,00</InfoName>
                     <View style = {styles.lineStyle} />
                     <InfoName style={styles.descricao}>
@@ -149,23 +162,7 @@
               <Area>
                   <InfoArea>
                     <InfoName style={styles.titulo}>
-                    Vendas Conciliadas</InfoName>
-                    <InfoName style={styles.descricao}>
-                    Ontem                                                     R$ 0,00</InfoName>
-                    <View style = {styles.lineStyle} />
-                    <InfoName style={styles.descricao}>
-                    Últimos 7 dias                                        R$ 0,00</InfoName>
-                    <View style = {styles.lineStyle} />
-                    <InfoName style={styles.descricao}>
-                    Últimos 30 dias                                      R$ 0,00</InfoName>
-                    <View style = {styles.lineStyle} />
-                    </InfoArea>
-                    <Ionicons style={styles.icon} name="cash-outline" size={35} color="#442357" /> 
-              </Area>
-              <Area>
-                  <InfoArea>
-                    <InfoName style={styles.titulo}>
-                    Vendas não Conciliadas</InfoName>
+                    Despesas</InfoName>
                     <InfoName style={styles.descricao}>
                     Ontem                                                     R$ 0,00</InfoName>
                     <View style = {styles.lineStyle} />
